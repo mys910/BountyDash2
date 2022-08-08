@@ -1,0 +1,12 @@
+C:\Unreal\BountyDash\Plugins\PowerUpPlugin\Intermediate\Build\Win64\UE4Editor\Development\PowerUpPlugin\Definitions.PowerUpPlugin.h
+C:/Unreal/BountyDash/Plugins/PowerUpPlugin/Source/PowerUpPlugin/Private/PowerUpObject.cpp
+C:\Unreal\BountyDash\Plugins\PowerUpPlugin\Source\PowerUpPlugin\Public\PowerUpObject.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/NoExportTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Math/UnitConversion.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Math/UnitConversion.inl
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Internationalization/PolyglotTextData.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\AssetRegistry/ARFilter.h
+C:\Unreal\BountyDash\Plugins\PowerUpPlugin\Intermediate\Build\Win64\UE4Editor\Inc\PowerUpPlugin\PowerUpObject.generated.h
+C:/Unreal/BountyDash/Plugins/PowerUpPlugin/Source/PowerUpPlugin/Private/PowerUpPlugin.cpp
+C:\Unreal\BountyDash\Plugins\PowerUpPlugin\Source\PowerUpPlugin\Public\PowerUpPlugin.h

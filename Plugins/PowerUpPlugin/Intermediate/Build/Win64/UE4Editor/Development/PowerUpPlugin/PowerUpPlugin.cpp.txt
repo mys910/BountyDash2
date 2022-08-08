@@ -1,0 +1,2 @@
+C:\Unreal\BountyDash\Plugins\PowerUpPlugin\Intermediate\Build\Win64\UE4Editor\Development\PowerUpPlugin\Definitions.PowerUpPlugin.h
+C:\Unreal\BountyDash\Plugins\PowerUpPlugin\Source\PowerUpPlugin\Public\PowerUpPlugin.h

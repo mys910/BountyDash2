@@ -42,7 +42,7 @@ public:
 		int32 MinSetCoins;
 
 	UPROPERTY(EditAnywhere)
-		float CoinSetTimeIntercal;
+		float CoinSetTimeInterval;
 
 	UPROPERTY(EditAnywhere)
 		float CoinTimeInterval;
