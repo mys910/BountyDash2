@@ -3,6 +3,7 @@
 #pragma once
 
 #include "BountyDash.h"
+#include "PowerUpObject.h"
 #include "GameFramework/Character.h"
 #include "BountyDashCharacter.generated.h"
 
@@ -58,25 +59,56 @@ protected:
 	int32 Score;
 	//플레이어 점수
 
+	//Smash 시간
+	UPROPERTY(EditAnywhere, Category = PowerUps)
+		float SmashTime;
+
+	//Magnet 시간
+	UPROPERTY(EditAnywhere, Category = PowerUps)
+		float MagnetTime;
+
+	//Magnet 거리
+	UPROPERTY(EditAnywhere, Category = PowerUps)
+		float MagnetReach;
+
+	//킬 포인트
+	float KillPoint;
+
 private:
+	//캐릭터 서 있는 위치 데이터
 	short CurrentLocation;
 	FVector DesiredLocation;
 	bool bBeingPushed;
-	//캐릭터 서 있는 위치 데이터
+
+	//파워업 속성
+	bool CanSmash;
+	bool CanMagnet;
 
 public:
 	void ScoreUp();
+	void PowerUp(EPowerUp Type);
+	int GetScore();
 
 protected:
-
+	//플레이어 좌우의 타깃 위치 이동을 조정
 	void MoveRight();
 	void MoveLeft();
-	//플레이어 좌우의 타깃 위치 이동을 조정
 
+	//컴포넌트 콜리전 캡슐에 사용 되는 오버랩 함수
 	UFUNCTION()
 	void MyOnComponentBeginOverLap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 	UFUNCTION()
 	void MyOnComponentEndOverLap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	//컴포넌트 콜리전 캡슐에 사용 되는 오버랩 함수
+
+	UFUNCTION()
+		void StopSmash();
+
+	UFUNCTION()
+		void StopMagnet();
+
+	void CoinMagnet();
+
+	UFUNCTION()
+		void Reset();
 };

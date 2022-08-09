@@ -6,7 +6,7 @@
 #include "BountyDashObject.h"
 #include "Obstacle.generated.h"
 
-class USphereComponent;
+class UDestructibleComponent;
 
 UCLASS()
 class BOUNTYDASH_API AObstacle : public ABountyDashObject
@@ -16,6 +16,8 @@ class BOUNTYDASH_API AObstacle : public ABountyDashObject
 public:	
 	// Sets default values for this actor's properties
 	AObstacle();
+
+	UDestructibleComponent* GetDestructable();
 
 protected:
 	// Called when the game starts or when spawned
@@ -27,7 +29,7 @@ public:
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		UStaticMeshComponent* Mesh;
+		UDestructibleComponent* Mesh;
 
 
 };
